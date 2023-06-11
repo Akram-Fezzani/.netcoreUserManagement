@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UserManagement.Data.Context;
 
 namespace UserManagement.Data.Migrations
 {
     [DbContext(typeof(UMContext))]
-    partial class UMContextModelSnapshot : ModelSnapshot
+    [Migration("20230608212240_NameOfYourMigration")]
+    partial class NameOfYourMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

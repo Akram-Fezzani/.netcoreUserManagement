@@ -6,10 +6,18 @@ namespace UserManagement.Domain.Models
 {
     public class UserLoginResponse
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public Guid Id { get; set; }
+        public string type { get; set; }
         public string Username { get; set; }
-        public string AuthToken { get; set; }
+        public string accessToken { get; set; }
+
+        public string roles { get; set; }
+
+
+
+
+
+
 
     }
 }

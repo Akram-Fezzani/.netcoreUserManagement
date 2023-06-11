@@ -16,6 +16,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.IdentityModel.Tokens.Jwt;
 using UserManagement.Api.helper;
+using System.Linq;
 
 namespace UserManagement.Api.Controllers
 {
@@ -25,6 +26,7 @@ namespace UserManagement.Api.Controllers
     {
         public IGenericRepository<User> Repository;
 
+        public IGenericRepository<Role> RoleRepository;
 
 
         private readonly AppSettings _appSettings;
@@ -34,10 +36,11 @@ namespace UserManagement.Api.Controllers
 
 
 
-        public UserController(IGenericRepository<User> _Repository, IMapper mapper)
+        public UserController(IGenericRepository<User> _Repository,IMapper mapper, IGenericRepository<Role> _RoleRepository)
 
         {
             Repository = _Repository;
+            RoleRepository = _RoleRepository;
 
             cancellation = new CancellationToken();
 
@@ -54,7 +57,7 @@ namespace UserManagement.Api.Controllers
             return (new GetListGenericHandler<User>(Repository).Handle(new GetListGenericQuery<User>(null, null), cancellation).Result);
         }
 
-        [HttpGet("GetUser")]
+        [HttpGet("getUserById")]
         public User getUserById(Guid Id)
         {
             return (new GetGenericHandler<User>(Repository).Handle(new GetGenericQuery<User>(condition: x => x.UserId == Id, null), cancellation).Result);
@@ -158,10 +161,15 @@ namespace UserManagement.Api.Controllers
                 {
                     generateJwtToken(user);
                     loggeduser.Username = user.Username;
-                    loggeduser.FirstName = user.Username;
-                    loggeduser.LastName = user.LastName;
-                    loggeduser.AuthToken = generateJwtToken(user);
+                    loggeduser.Id = user.UserId;
+                    loggeduser.roles = getRoleById(user.RoleId);
+                    //loggeduser.AuthAuthorities = "Admin";
+                    loggeduser.accessToken = generateJwtToken(user);
 
+
+
+
+ 
                     return Ok(loggeduser);
                 }
                 else
@@ -173,7 +181,56 @@ namespace UserManagement.Api.Controllers
                 return BadRequest(new { message = "User not found" });
         }
 
+        [HttpGet("GetRoleById")]
+        public String getRoleById(Guid Id)
+        {
+            var role = (new GetGenericHandler<Role>(RoleRepository).Handle(new GetGenericQuery<Role>(condition: x => x.RoleId == Id, null), cancellation).Result);
+            return (role.role);
+        }
 
-     
+        [HttpGet("GetNumberOfUsers")]
+        public int GetNumberOfUsers()
+        {
+            IEnumerable<User> users = (new GetListGenericHandler<User>(Repository).Handle(new GetListGenericQuery<User>(null, null), cancellation).Result);
+            return users.Count();
+        }
+
+
+        [HttpGet("GetNumberOfActiveUsers")]
+        public int GetNumberOfActiveUsers()
+        {
+      var  s=0;
+            IEnumerable<User> users = (new GetListGenericHandler<User>(Repository).Handle(new GetListGenericQuery<User>(null, null), cancellation).Result);
+            foreach (var user in users)
+            {
+                if (user.state == true)
+                {
+                    s = s + 1;
+                }
+            }
+            return (s); 
+        }
+
+
+
+
+
+
+
+        [HttpGet("GetNumberOfAdmins")]
+        public int GetNumberOfAdmins()
+        {
+            var x = 0;
+            IEnumerable<User> users = (new GetListGenericHandler<User>(Repository).Handle(new GetListGenericQuery<User>(null, null), cancellation).Result);
+            foreach (var user in users)
+            {
+                if (getRoleById(user.RoleId) == "ADMIN")
+                {
+                    x = x + 1;
+                }
+            }
+            return (x);
+        }
+
     }
 }

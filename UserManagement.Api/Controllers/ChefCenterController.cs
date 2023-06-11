@@ -16,6 +16,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.IdentityModel.Tokens.Jwt;
 using UserManagement.Api.helper;
+using System.Linq;
 
 namespace UserManagement.Api.Controllers
 {
@@ -73,7 +74,9 @@ namespace UserManagement.Api.Controllers
         [HttpPost("AjoutChef")]
         public async Task<ChefCentre> PostUser([FromBody] ChefCentre ChefCentre)
         {
-           
+            var hashsalt = EncryptPassword(ChefCentre.Password);
+            ChefCentre.Password = hashsalt.Hash;
+            ChefCentre.StoredSalt = hashsalt.Salt;
 
             var x = new AddGenericCommand<ChefCentre>(ChefCentre);
             var GenericHandler = new AddGenericHandler<ChefCentre>(ChefCentreRepository);
@@ -110,5 +113,43 @@ namespace UserManagement.Api.Controllers
             return BadRequest(new { message = "Chef Center Not Found" });
 
         }
+
+
+        [HttpGet("GetCenterFomChef")]
+        public Guid getRoleById(Guid Id)
+        {
+            var chef = (new GetGenericHandler<ChefCentre>(ChefCentreRepository).Handle(new GetGenericQuery<ChefCentre>(condition: x => x.UserId == Id, null), cancellation).Result);
+            return (chef.CentreId);
+        }
+
+        [HttpGet("GetNumberOfChefCenters")]
+        public int GetNumberOfChefCenters()
+        {
+            IEnumerable<ChefCentre> users = (new GetListGenericHandler<ChefCentre>(ChefCentreRepository).Handle(new GetListGenericQuery<ChefCentre>(null, null), cancellation).Result);
+            return users.Count();
+        }
+
+        [HttpPost("EncryptPassword")]
+
+        public HashSalt EncryptPassword(string password)
+        {
+            byte[] salt = new byte[128 / 8]; // Generate a 128-bit salt using a secure PRNG
+            using (var rng = RandomNumberGenerator.Create())
+            {
+                rng.GetBytes(salt);
+            }
+            string encryptedPassw = Convert.ToBase64String(KeyDerivation.Pbkdf2(
+                password: password,
+                salt: salt,
+                prf: KeyDerivationPrf.HMACSHA1,
+                iterationCount: 10000,
+                numBytesRequested: 256 / 8
+            ));
+            return new HashSalt { Hash = encryptedPassw, Salt = salt };
+        }
+
+
+
+
     }
 }
