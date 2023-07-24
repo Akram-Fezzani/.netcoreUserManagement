@@ -106,6 +106,20 @@ namespace UserManagement.Api.Controllers
             return await GenericHandler.Handle(x, cancellation);
         }
 
+
+        [HttpPut("UpdatePassword")]
+        public async Task<User> UpdatePassword(Guid Id, string password)
+        {
+            var user =( new GetGenericHandler<User>(Repository).Handle(new GetGenericQuery<User>(condition: x => x.UserId == Id, null), cancellation).Result);
+            user.Password = password;
+            var hashsalt = EncryptPassword(user.Password);
+            user.Password = hashsalt.Hash;
+            user.StoredSalt = hashsalt.Salt;
+            var x = new PutGenericCommand<User>(user);
+            var GenericHandler = new PutGenericHandler<User>(Repository);
+            return await GenericHandler.Handle(x, cancellation);
+        }
+
         [HttpDelete("DeleteUser")]
         public async Task<User> DeleteUser(Guid Id)
         {
@@ -213,6 +227,30 @@ namespace UserManagement.Api.Controllers
 
 
 
+        [HttpGet("GetUserStats")]
+        public UserStats getUserStats()
+        {
+            UserStats us = new UserStats();
+            us.roles = new List<String>();
+            us.users = new List<int>();
+
+            IEnumerable<User> users = (new GetListGenericHandler<User>(Repository).Handle(new GetListGenericQuery<User>(null, null), cancellation).Result);
+            IEnumerable<Role> Roles = (new GetListGenericHandler<Role>(RoleRepository).Handle(new GetListGenericQuery<Role>(null, null), cancellation).Result);
+            foreach (var role in Roles)
+            {
+                var s= 0;
+                us.roles.Add( role.role);
+                foreach (var user in users)
+                {
+                    if (user.RoleId == role.RoleId)
+                    {
+                        s++;
+                    }
+                }
+                us.users.Add(s);
+            }
+            return us;
+        }
 
 
 
@@ -231,6 +269,5 @@ namespace UserManagement.Api.Controllers
             }
             return (x);
         }
-
     }
 }

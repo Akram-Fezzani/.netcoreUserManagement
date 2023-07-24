@@ -157,3 +157,4 @@ C:\Users\akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementM
 C:\Users\akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Api\obj\Debug\netcoreapp3.1\UserManagement.Api.pdb
 C:\Users\akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Api\obj\Debug\netcoreapp3.1\UserManagement.Api.genruntimeconfig.cache
 C:\Users\akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Api\obj\Debug\netcoreapp3.1\UserManagement.Api.csproj.CopyComplete

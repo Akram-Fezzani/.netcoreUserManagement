@@ -13,3 +13,4 @@ C:\Users\akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementM
 C:\Users\akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Data\obj\Debug\netcoreapp3.1\UserManagement.Data.dll
 C:\Users\akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Data\obj\Debug\netcoreapp3.1\UserManagement.Data.pdb
 C:\Users\akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Data\obj\Debug\netcoreapp3.1\UserManagement.Data.genruntimeconfig.cache
+C:\Users\akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Data\obj\Debug\netcoreapp3.1\UserManagement.Data.csproj.CopyComplete
