@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MbIq9cHoMKn0CRrsAd2GA0j7j4Onsg+EpTbqbZqSngE1Rx08e34ZaRFFgfUYHIc4iSaw/SRtyGFtmxNundFaDw==",
+  "dgSpecHash": "O5jM83vO5eaCe7B2k+kyl8nBHc09nB6Bsp30M7GZCF4VIOzVZ/j2tc9Q8io9T7FN31Pd12pIXanT91LV9RBZgQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Infra.Ioc\\UserManagement.Infra.Ioc.csproj",
   "expectedPackageFiles": [

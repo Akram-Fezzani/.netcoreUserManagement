@@ -1,0 +1,14 @@
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Data\bin\Debug\netcoreapp3.1\UserManagement.Data.deps.json
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Data\bin\Debug\netcoreapp3.1\UserManagement.Data.runtimeconfig.json
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Data\bin\Debug\netcoreapp3.1\UserManagement.Data.runtimeconfig.dev.json
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Data\bin\Debug\netcoreapp3.1\UserManagement.Data.dll
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Data\bin\Debug\netcoreapp3.1\UserManagement.Data.pdb
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Data\bin\Debug\netcoreapp3.1\UserManagement.Domain.dll
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Data\bin\Debug\netcoreapp3.1\UserManagement.Domain.pdb
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Data\obj\Debug\netcoreapp3.1\UserManagement.Data.csproj.AssemblyReference.cache
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Data\obj\Debug\netcoreapp3.1\UserManagement.Data.csproj.CoreCompileInputs.cache
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Data\obj\Debug\netcoreapp3.1\UserManagement.Data.AssemblyInfoInputs.cache
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Data\obj\Debug\netcoreapp3.1\UserManagement.Data.AssemblyInfo.cs
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Data\obj\Debug\netcoreapp3.1\UserManagement.Data.csproj.CopyComplete
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Data\obj\Debug\netcoreapp3.1\UserManagement.Data.dll
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Data\obj\Debug\netcoreapp3.1\UserManagement.Data.pdb
