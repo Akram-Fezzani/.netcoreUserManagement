@@ -1,0 +1,15 @@
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\bin\Release\netcoreapp3.1\UserManagement.Infra.Ioc.deps.json
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\bin\Release\netcoreapp3.1\UserManagement.Infra.Ioc.dll
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\bin\Release\netcoreapp3.1\UserManagement.Infra.Ioc.pdb
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\bin\Release\netcoreapp3.1\UserManagement.Data.dll
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\bin\Release\netcoreapp3.1\UserManagement.Domain.dll
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\bin\Release\netcoreapp3.1\UserManagement.Data.pdb
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\bin\Release\netcoreapp3.1\UserManagement.Domain.pdb
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\obj\Release\netcoreapp3.1\UserManagement.Infra.Ioc.csproj.AssemblyReference.cache
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\obj\Release\netcoreapp3.1\UserManagement.Infra.Ioc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\obj\Release\netcoreapp3.1\UserManagement.Infra.Ioc.AssemblyInfoInputs.cache
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\obj\Release\netcoreapp3.1\UserManagement.Infra.Ioc.AssemblyInfo.cs
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\obj\Release\netcoreapp3.1\UserManagement.Infra.Ioc.csproj.CoreCompileInputs.cache
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\obj\Release\netcoreapp3.1\UserManagement.Infra.Ioc.csproj.CopyComplete
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\obj\Release\netcoreapp3.1\UserManagement.Infra.Ioc.dll
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\obj\Release\netcoreapp3.1\UserManagement.Infra.Ioc.pdb

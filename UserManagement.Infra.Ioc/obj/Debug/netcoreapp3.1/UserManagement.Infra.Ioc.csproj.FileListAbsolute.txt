@@ -6,10 +6,10 @@ C:\Users\akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementM
 C:\Users\akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\bin\Debug\netcoreapp3.1\UserManagement.Data.pdb
 C:\Users\akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\bin\Debug\netcoreapp3.1\UserManagement.Domain.pdb
 C:\Users\akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\obj\Debug\netcoreapp3.1\UserManagement.Infra.Ioc.csproj.AssemblyReference.cache
-C:\Users\akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\obj\Debug\netcoreapp3.1\UserManagement.Infra.Ioc.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\obj\Debug\netcoreapp3.1\UserManagement.Infra.Ioc.AssemblyInfoInputs.cache
 C:\Users\akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\obj\Debug\netcoreapp3.1\UserManagement.Infra.Ioc.AssemblyInfo.cs
 C:\Users\akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\obj\Debug\netcoreapp3.1\UserManagement.Infra.Ioc.csproj.CoreCompileInputs.cache
 C:\Users\akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\obj\Debug\netcoreapp3.1\UserManagement.Infra.Ioc.dll
 C:\Users\akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\obj\Debug\netcoreapp3.1\UserManagement.Infra.Ioc.pdb
 C:\Users\akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\obj\Debug\netcoreapp3.1\UserManagement.Infra.Ioc.csproj.CopyComplete
+C:\Users\Akram\Desktop\BonDeLivraison\UserManagementMicroService\UserManagementMicroService\UserManagement.Infra.Ioc\obj\Debug\netcoreapp3.1\UserManagement.Infra.Ioc.GeneratedMSBuildEditorConfig.editorconfig

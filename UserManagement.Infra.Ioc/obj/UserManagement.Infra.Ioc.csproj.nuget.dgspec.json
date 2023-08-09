@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Infra.Ioc\\UserManagement.Infra.Ioc.csproj": {}
+    "C:\\Users\\Akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Infra.Ioc\\UserManagement.Infra.Ioc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Data\\UserManagement.Data.csproj": {
+    "C:\\Users\\Akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Data\\UserManagement.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Data\\UserManagement.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Data\\UserManagement.Data.csproj",
         "projectName": "UserManagement.Data",
-        "projectPath": "C:\\Users\\akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Data\\UserManagement.Data.csproj",
-        "packagesPath": "C:\\Users\\akram\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Data\\obj\\",
+        "projectPath": "C:\\Users\\Akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Data\\UserManagement.Data.csproj",
+        "packagesPath": "C:\\Users\\Akram\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\akram\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Akram\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -32,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Domain\\UserManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Domain\\UserManagement.Domain.csproj"
+              "C:\\Users\\Akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Domain\\UserManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\Akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Domain\\UserManagement.Domain.csproj"
               }
             }
           }
@@ -73,7 +69,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -82,26 +79,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.412\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Domain\\UserManagement.Domain.csproj": {
+    "C:\\Users\\Akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Domain\\UserManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Domain\\UserManagement.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Domain\\UserManagement.Domain.csproj",
         "projectName": "UserManagement.Domain",
-        "projectPath": "C:\\Users\\akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Domain\\UserManagement.Domain.csproj",
-        "packagesPath": "C:\\Users\\akram\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Domain\\UserManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\Akram\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\akram\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Akram\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -145,7 +138,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -154,26 +148,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.412\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Infra.Ioc\\UserManagement.Infra.Ioc.csproj": {
+    "C:\\Users\\Akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Infra.Ioc\\UserManagement.Infra.Ioc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Infra.Ioc\\UserManagement.Infra.Ioc.csproj",
+        "projectUniqueName": "C:\\Users\\Akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Infra.Ioc\\UserManagement.Infra.Ioc.csproj",
         "projectName": "UserManagement.Infra.Ioc",
-        "projectPath": "C:\\Users\\akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Infra.Ioc\\UserManagement.Infra.Ioc.csproj",
-        "packagesPath": "C:\\Users\\akram\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Infra.Ioc\\obj\\",
+        "projectPath": "C:\\Users\\Akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Infra.Ioc\\UserManagement.Infra.Ioc.csproj",
+        "packagesPath": "C:\\Users\\Akram\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Infra.Ioc\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\akram\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Akram\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -186,11 +176,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Data\\UserManagement.Data.csproj": {
-                "projectPath": "C:\\Users\\akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Data\\UserManagement.Data.csproj"
+              "C:\\Users\\Akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Data\\UserManagement.Data.csproj": {
+                "projectPath": "C:\\Users\\Akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Data\\UserManagement.Data.csproj"
               },
-              "C:\\Users\\akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Domain\\UserManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Domain\\UserManagement.Domain.csproj"
+              "C:\\Users\\Akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Domain\\UserManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\Akram\\Desktop\\BonDeLivraison\\UserManagementMicroService\\UserManagementMicroService\\UserManagement.Domain\\UserManagement.Domain.csproj"
               }
             }
           }
@@ -216,7 +206,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -225,7 +216,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.412\\RuntimeIdentifierGraph.json"
         }
       }
     }
