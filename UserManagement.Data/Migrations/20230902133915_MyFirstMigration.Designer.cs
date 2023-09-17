@@ -10,8 +10,8 @@ using UserManagement.Data.Context;
 namespace UserManagement.Data.Migrations
 {
     [DbContext(typeof(UMContext))]
-    [Migration("20230608212240_NameOfYourMigration")]
-    partial class NameOfYourMigration
+    [Migration("20230902133915_MyFirstMigration")]
+    partial class MyFirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,6 +20,37 @@ namespace UserManagement.Data.Migrations
                 .HasAnnotation("ProductVersion", "3.1.30")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("UserManagement.Domain.Models.Notification", b =>
+                {
+                    b.Property<Guid>("NotificationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("MyProperty")
+                        .HasColumnType("bit");
+
+                    b.Property<Guid>("UseriD")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("content")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("hovored")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("notifDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("senderId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("NotificationId");
+
+                    b.HasIndex("UseriD");
+
+                    b.ToTable("Notification");
+                });
 
             modelBuilder.Entity("UserManagement.Domain.Models.Role", b =>
                 {
@@ -89,6 +120,15 @@ namespace UserManagement.Data.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.HasDiscriminator().HasValue("ChefCentre");
+                });
+
+            modelBuilder.Entity("UserManagement.Domain.Models.Notification", b =>
+                {
+                    b.HasOne("UserManagement.Domain.Models.User", null)
+                        .WithMany("Notifications")
+                        .HasForeignKey("UseriD")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("UserManagement.Domain.Models.User", b =>

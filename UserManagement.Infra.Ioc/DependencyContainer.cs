@@ -18,8 +18,10 @@ namespace UserManagement.Infra.Ioc
         {
             //Repository
             services.AddTransient<IGenericRepository<User>, GenericRepository<User>>();
+
             services.AddTransient<IGenericRepository<Role>, GenericRepository<Role>>();
             services.AddTransient<IGenericRepository<ChefCentre>, GenericRepository<ChefCentre>>();
+            services.AddTransient<IGenericRepository<Notification>, GenericRepository<Notification>>();
 
 
 
@@ -47,6 +49,16 @@ namespace UserManagement.Infra.Ioc
             services.AddTransient<IRequestHandler<PutGenericCommand<ChefCentre>, ChefCentre>, PutGenericHandler<ChefCentre>>();
             services.AddTransient<IRequestHandler<RemoveGenericCommand<ChefCentre>, ChefCentre>, RemoveGenericHandler<ChefCentre>>();
             services.AddTransient<IRequestHandler<AddGenericCommand<ChefCentre>, ChefCentre>, AddGenericHandler<ChefCentre>>();
+
+
+
+
+            services.AddTransient<IRequestHandler<GetListGenericQuery<Notification>, IEnumerable<Notification>>, GetListGenericHandler<Notification>>();
+            services.AddTransient<IRequestHandler<GetGenericQuery<Notification>, Notification>, GetGenericHandler<Notification>>();
+            services.AddTransient<IRequestHandler<PutGenericCommand<Notification>, Notification>, PutGenericHandler<Notification>>();
+            services.AddTransient<IRequestHandler<RemoveGenericCommand<Notification>, Notification>, RemoveGenericHandler<Notification>>();
+            services.AddTransient<IRequestHandler<AddGenericCommand<Notification>, Notification>, AddGenericHandler<Notification>>();
+
 
         }
     }

@@ -18,7 +18,8 @@ namespace UserManagement.Domain.Models
         public string Password { get; set; }
         public byte[] StoredSalt { get; set; }
         public Guid RoleId { get; set; }
-        
+
+        public IList<Notification> Notifications { get; set; }
 
 
 

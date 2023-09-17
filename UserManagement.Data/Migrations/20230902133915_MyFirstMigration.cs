@@ -28,6 +28,7 @@ namespace UserManagement.Data.Migrations
                     LastName = table.Column<string>(nullable: true),
                     Username = table.Column<string>(nullable: true),
                     Phone = table.Column<int>(nullable: false),
+                    state = table.Column<bool>(nullable: false),
                     Email = table.Column<string>(nullable: true),
                     Password = table.Column<string>(nullable: true),
                     StoredSalt = table.Column<byte[]>(nullable: true),
@@ -46,6 +47,34 @@ namespace UserManagement.Data.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Notification",
+                columns: table => new
+                {
+                    NotificationId = table.Column<Guid>(nullable: false),
+                    content = table.Column<string>(nullable: true),
+                    UseriD = table.Column<Guid>(nullable: false),
+                    senderId = table.Column<Guid>(nullable: false),
+                    MyProperty = table.Column<bool>(nullable: false),
+                    hovored = table.Column<bool>(nullable: false),
+                    notifDate = table.Column<DateTime>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Notification", x => x.NotificationId);
+                    table.ForeignKey(
+                        name: "FK_Notification_Users_UseriD",
+                        column: x => x.UseriD,
+                        principalTable: "Users",
+                        principalColumn: "UserId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Notification_UseriD",
+                table: "Notification",
+                column: "UseriD");
+
             migrationBuilder.CreateIndex(
                 name: "IX_Users_RoleId",
                 table: "Users",
@@ -54,6 +83,9 @@ namespace UserManagement.Data.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Notification");
+
             migrationBuilder.DropTable(
                 name: "Users");
 
